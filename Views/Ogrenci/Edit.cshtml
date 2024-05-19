@@ -1,10 +1,13 @@
 @model Ogrenci
 
-<!-- Öğrenci Ekleme Formu Başlangıcı -->
-<h2>Öğrenci Ekleme</h2>
+<!-- Öğrenci Düzenleme Formu Başlangıcı -->
+<h2>Öğrenci Düzenleme</h2>
 <hr>
 <!-- Form Başlangıcı -->
-<form asp-controller="Ogrenci" asp-action="Create" method="post">
+<form asp-controller="Ogrenci" asp-action="Edit" method="post">
+    <!-- Öğrenci ID'si -->
+    <input type="hidden" asp-for="OgrenciId">
+    
     <!-- Öğrenci Adı -->
     <div class="mb-3">
         <label asp-for="OgrenciAd" class="form-label">Öğrenci Adı</label>
@@ -33,4 +36,4 @@
     <button type="submit" class="btn btn-secondary">Kaydet</button>
 </form>
 <!-- Form Bitişi -->
-<!-- Öğrenci Ekleme Formu Bitişi -->
+<!-- Öğrenci Düzenleme Formu Bitişi -->

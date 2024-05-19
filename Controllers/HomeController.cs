@@ -1,31 +1,37 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using efcoreApp.Models;
+using System.Diagnostics;
 
-namespace efcoreApp.Controllers;
-
-public class HomeController : Controller
+namespace efcoreApp.Controllers
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    // Ana sayfa ve hata yönetimi için kullanılan denetleyici
+    public class HomeController : Controller
     {
-        _logger = logger;
-    }
+        private readonly ILogger<HomeController> _logger;
 
-    public IActionResult Index()
-    {
-        return View();
-    }
+        // Constructor metodu, ILogger bağımlılığını alır
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
+        // Ana sayfa yönlendirme metodu
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        // Gizlilik sayfası yönlendirme metodu
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        // Hata yönetimi sayfası yönlendirme metodu
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
     }
 }
