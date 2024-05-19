@@ -125,3 +125,4 @@ C:\Users\ALENCA\efcoreApp\obj\Debug\net8.0\refint\efcoreApp.dll
 C:\Users\ALENCA\efcoreApp\obj\Debug\net8.0\efcoreApp.pdb
 C:\Users\ALENCA\efcoreApp\obj\Debug\net8.0\efcoreApp.genruntimeconfig.cache
 C:\Users\ALENCA\efcoreApp\obj\Debug\net8.0\ref\efcoreApp.dll
+c:\Users\ALENCA\efcoreApp\obj\Debug\net8.0\efcoreApp.sourcelink.json
