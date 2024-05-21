@@ -3,7 +3,10 @@
 <!-- Öğrenci Düzenleme Formu Başlangıcı -->
 <h2>Öğrenci Düzenleme</h2>
 <hr>
-<!-- Form Başlangıcı -->
+
+<div class="row">
+    <div class="col-8">
+    <!-- Form Başlangıcı -->
 <form asp-controller="Ogrenci" asp-action="Edit" method="post">
     <!-- Öğrenci ID'si -->
     <input type="hidden" asp-for="OgrenciId">
@@ -35,5 +38,19 @@
     <!-- Kaydet Butonu -->
     <button type="submit" class="btn btn-secondary">Kaydet</button>
 </form>
+</div>
 <!-- Form Bitişi -->
 <!-- Öğrenci Düzenleme Formu Bitişi -->
+
+        <div class="col-4">
+            <h4>Kurslar</h4>
+            <hr>
+            <ul>
+                @foreach (var item in Model.KursKayitlari)
+                {
+                    
+                    <li>@item.Kurs.Baslik</li>
+                }
+            </ul>
+        </div>
+    </div>

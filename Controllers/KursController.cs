@@ -33,7 +33,11 @@ namespace efcoreApp.Controllers;
                 return NotFound();
             }
 
-            var krs = await _context.Kurslar.FindAsync(id);
+            var krs = await _context
+                    .Kurslar
+                    .Include(k =>k.KursKayitlari)
+                    .ThenInclude(k => k. Ogrenci)
+                    .FirstOrDefaultAsync(k =>k.KursId==id);
 
             if (krs == null)
             {
