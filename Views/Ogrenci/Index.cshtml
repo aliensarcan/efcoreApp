@@ -21,8 +21,8 @@
                 <td>@Html.DisplayFor(modelItem => item.OgrenciAd)</td> <!-- Öğrenci Adı Gösterimi -->
                 <td>@Html.DisplayFor(modelItem => item.OgrenciSoyad)</td> <!-- Öğrenci Soyadı Gösterimi -->
                 <td>
-                    <a asp-controller="Ogrenci" asp-action="Edit" asp-route-id="@item.OgrenciId" class="btn btn-sm btn-primary">Düzenle</a> <!-- Düzenle Butonu -->
-                    <a href="" class="btn btn-sm btn-danger">Sil</a> <!-- Sil Butonu -->
+                    <a asp-controller="Ogrenci" asp-action="Edit" asp-route-id="@item.OgrenciId" class="btn btn-sm btn-primary">Edit</a> <!-- Düzenle Butonu -->
+                    <a asp-controller="Ogrenci" asp-action="Delete" asp-route-id="@item.OgrenciId" class="btn btn-sm btn-danger">Delete</a> <!-- Düzenle Butonu -->
                 </td>
             </tr>
         }
