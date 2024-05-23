@@ -1,3 +1,4 @@
+using efcoreApp.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace efcoreApp
@@ -11,5 +12,6 @@ namespace efcoreApp
         public DbSet<Kurs> Kurslar{ get; set; } = null!;
         public  DbSet<Ogrenci> Ogrenciler { get; set; } = null!;
         public DbSet<KursKayit> KursKayitlari{ get; set; } = null!;
+        public DbSet<Ogretmen> Ogretmenler{ get; set; } = null!;
     }
 }
