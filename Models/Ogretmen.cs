@@ -9,6 +9,12 @@ namespace efcoreApp.Models
 
         public string? Ad { get; set; }
         public string? Soyad { get; set; }
+         public string AdSoyad {
+            get
+            {
+                return this.Ad + " " + this.Soyad;
+            }
+            }
 
          public string? Telefon { get; set; }
 

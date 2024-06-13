@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xwPsCly2G1JxJojiZoCXxmXPjTvWzYSwjeXd5Ork7yo=",
+  "Hash": "6yQgISUdCGbl2+xJALQiph/GHVzKzuYtjm4YR34QTGg=",
   "Source": "efcoreApp",
   "BasePath": "_content/efcoreApp",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ALENCA\\efcoreApp\\wwwroot\\img\\Dershane-Gerekli-Mi.jpg",
+      "SourceId": "efcoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ALENCA\\efcoreApp\\wwwroot\\",
+      "BasePath": "_content/efcoreApp",
+      "RelativePath": "img/Dershane-Gerekli-Mi.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Dershane-Gerekli-Mi.jpg"
     },
     {
       "Identity": "C:\\Users\\ALENCA\\efcoreApp\\wwwroot\\js\\site.js",

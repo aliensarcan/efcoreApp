@@ -1,5 +1,4 @@
-@model Kurs
-
+@model efcoreApp.Kurs2
 
 <h2>Kurs Düzenleme</h2>
 <hr>
@@ -10,16 +9,20 @@
     <input type="hidden" asp-for="KursId">
     
     
-    <div class="mb-3">
-        <label asp-for="Baslik" class="form-label">Kurs Adı</label>
-        <input asp-for="Baslik" class="form-control">
+    <div class="mb-3">Başlık
+    <input asp-for="Baslik" class="form-control">
     </div>
+    <div class="mb-3">
+        <label asp-for= "OgretmenId">Öğretmen</label>
+        <select asp-for = "OgretmenId" asp-items="ViewBag.Ogretmenler" class="form-select">
+        <option value="">Seçiniz</option>
+        </select>
     
     
      <button type="submit" class="btn btn-secondary">Kaydet</button>
 </form>
 </div>
-    <div class="col-4">
+    <div class="col-3">
 
         <h4>Öğrenciler</h4>
         <hr>
@@ -31,5 +34,3 @@
         </ul>
     </div>
 </div>
-
-

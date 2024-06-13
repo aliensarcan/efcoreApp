@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ALENCA\\efcoreApp\\wwwroot\\img\\Dershane-Gerekli-Mi.jpg",
+      "PackagePath": "staticwebassets\\img\\Dershane-Gerekli-Mi.jpg"
+    },
+    {
       "Id": "C:\\Users\\ALENCA\\efcoreApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
